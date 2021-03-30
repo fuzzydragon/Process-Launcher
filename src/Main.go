@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	application string = ""
-	directory string = ""
+	application string = "RobloxPlayerBeta.exe"
+	directory string = "C:\\Users\\Andrew\\Desktop\\ProtoSmasher v3 Release\\ProtoSmasher.exe"
 )
 
 var (
@@ -75,8 +75,8 @@ func OnReady() {
 	icon, _ := ioutil.ReadFile("Icon.ico")
 
 	systray.SetIcon(icon)
-	systray.SetTitle("Title")
-	systray.SetTooltip("Tip")
+	systray.SetTitle("Process Launcher")
+	systray.SetTooltip("Launch a process")
 
 	close := systray.AddMenuItem("Quit", "Close the application")
 
